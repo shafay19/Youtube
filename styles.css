@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #f0f0f0;
+  --white: white;
+  --primary-shade: #979797;
+  --primary-light: #dbdbdb;
+}
+body {
+  position: relative;
+  background: var(--primary-color);
+  font-family: "roboto", sans-serif;
+}
+/* nav bar */
+.nav-bar {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  padding: 0 0.25vw;
+  z-index: 4;
+}
+/* .toggle-btn {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--primary-shade);
+  top: 50%;
+  transform: translateY(-50%);
+} */
+.toggle-btn span:nth-child(1) {
+  top: 0;
+}
+.toggle-btn span:nth-child(3) {
+  top: 100%;
+}
+.logo {
+  height: 30px;
+  margin: -10px 30px 0;
+}
+
+.search-box {
+  position: relative;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 50%;
+  height: 35px;
+  display: flex;
+}
+.search-bar {
+  width: 85%;
+  height: 100%;
+  border: 2px solid var(--primary-light);
+  padding: 0 20px;
+  font-size: 16px;
+}
+.search-btn {
+  width: 15%;
+  height: 100%;
+  background: var(--primary-color);
+  border: 2px solid var(--primary-light);
+  padding: 5px 0;
+  border-left: none;
+}
+.search-btn img {
+  height: 100%;
+}
+.user-opt {
+  height: 35px;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.icon {
+  height: 80%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.user-profile {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* sidebar */
+.side-bar {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  min-width: 250px;
+  background: var(--white);
+  width: 250px;
+  height: 100%;
+  z-index: 3;
+}
+.seperator {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+.l {
+  width: 250px;
+  height: 60px;
+}
+
+.links,
+.link-active {
+  width: 100%;
+  height: 60px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0;
+}
+.links img {
+  margin-right: 20px;
+}
+.links:hover,
+.link-active:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* filters */
+.filters {
+  position: fixed;
+  left: 250px;
+  top: 60px;
+  width: calc(100% - 250px);
+  height: 60px;
+  background: var(--white);
+  border-top: 1px solid var(--primary-light);
+  border-bottom: 1px solid var(--primary-light);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  z-index: 4;
+}
+.filter {
+  flex: 0 0 auto;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-light);
+  text-transform: capitalize;
+  margin-right: 10px;
+  color: rgb(36, 36, 36);
+  font-size: 15px;
+  cursor: pointer;
+}
+.filter-active {
+  flex: 0 0 auto;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: black;
+  border: 1px solid var(--primary-light);
+  text-transform: capitalize;
+  margin-right: 10px;
+  color: var(--white);
+  font-size: 15px;
+  cursor: pointer;
+}
+.filter,
+.filter-active:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.four-videos {
+  display: block;
+  width: calc(100%-250px);
+  position: relative;
+}
+.video-container {
+  width: 25%;
+  margin-top: 120px;
+  margin-left: 250px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 20px 5px;
+  overflow-x: hidden;
+  border: 2px solid var(--primary-light);
+  border-radius: 10%;
+  float: left;
+}
+
+.video {
+  min-height: 100%;
+  height: auto;
+}
+
+.nail {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.content {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.channel-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.title {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+}
+
+.channel-name {
+  font-size: 14px;
+  margin: 2px 0;
+  color: #979797;
+}
+img {
+  overflow: clip;
+}

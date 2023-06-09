@@ -87,8 +87,8 @@ body {
 }
 .user-profile {
   cursor: pointer;
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 100%;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -189,9 +189,8 @@ body {
   font-size: 13px;
   cursor: pointer;
 }
-.filter,
-.filter-active:hover {
-  background: rgba(0, 0, 0, 0.1);
+.filter:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .four-videos {
   display: flex;
@@ -221,9 +220,9 @@ body {
 }
 
 .nail {
-  width: 100%;
-  height: 150px;
-  border-radius: 5%;
+  width: 105%;
+  height: 200px;
+  border-radius: 2%;
   object-fit: cover;
 }
 .nail:hover {
@@ -244,7 +243,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-right: 10px;
-  margin-top: 30px;
+  margin-top: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -252,6 +251,7 @@ body {
 .title {
   width: 100%;
   height: 70px;
+  margin-right: 120px;
   margin-left: 0px;
   margin-top: 10px;
   font-size: 16px;
@@ -260,7 +260,7 @@ body {
 
 .channel-name {
   font-size: 14px;
-  margin-top: 0px;
+  margin-bottom: 0px;
   color: #979797;
 }
 img {
